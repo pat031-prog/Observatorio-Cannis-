@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Work Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --font-serif: "Playfair Display", serif;
+  
+  --color-cannis-ink: #1A1A1A;
+  --color-cannis-cream: #F5F2E7;
+  --color-cannis-ivory: #FAF8F2;
+  --color-cannis-olive: #b2ba90;
+  --color-cannis-olive-light: #cfd4bc;
+  
+  --shadow-brutal-sm: 2px 2px 0px 0px var(--color-cannis-ink);
+  --shadow-brutal: 4px 4px 0px 0px var(--color-cannis-ink);
+  --shadow-brutal-lg: 8px 8px 0px 0px var(--color-cannis-ink);
+}
+
+body {
+  background-color: var(--color-cannis-cream);
+  color: var(--color-cannis-ink);
+  font-family: var(--font-sans);
+  /* Subtle grain texture overlay for editorial feel */
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+}
+
+.brutal-border {
+  border: 2px solid var(--color-cannis-ink);
+}
+
+.brutal-border-thick {
+  border: 4px solid var(--color-cannis-ink);
+}
+
+.brutal-shadow {
+  box-shadow: var(--shadow-brutal);
+}
+
+.brutal-shadow-sm {
+  box-shadow: var(--shadow-brutal-sm);
+}
+
+.brutal-shadow-lg {
+  box-shadow: var(--shadow-brutal-lg);
+}
